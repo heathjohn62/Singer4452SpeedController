@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "regulator-PCB")(type "KiCad")(uri "${KIPRJMOD}/regulator-PCB.kicad_sym")(options "")(descr ""))
+)
