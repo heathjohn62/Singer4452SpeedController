@@ -500,7 +500,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "speed-sensor-PCB.net",
+      "netlist": "regulator-PCB.net",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
