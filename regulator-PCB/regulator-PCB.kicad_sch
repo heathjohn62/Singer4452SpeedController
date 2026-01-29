@@ -6739,6 +6739,12 @@
 		(color 0 0 0 0)
 		(uuid "f2ca807a-1411-409a-86ec-d46c11e59114")
 	)
+	(junction
+		(at 74.93 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbdd9a3f-dc4c-4455-85bc-663d455f6b39")
+	)
 	(no_connect
 		(at 349.25 156.21)
 		(uuid "03e1d40b-dfd3-4c0b-baf1-6ba584043b92")
@@ -6842,10 +6848,6 @@
 	(no_connect
 		(at 107.95 133.35)
 		(uuid "f25814e3-7451-4d66-9726-1c3a56410c0a")
-	)
-	(no_connect
-		(at 179.07 166.37)
-		(uuid "f578ca0b-f5ab-45a8-bf87-878242666c7e")
 	)
 	(no_connect
 		(at 349.25 191.77)
@@ -6993,6 +6995,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 134.62) (xy 74.93 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b8d8cc4-995c-4155-a6b0-f34bbe942ea9")
+	)
+	(wire
+		(pts
 			(xy 59.69 242.57) (xy 64.77 242.57)
 		)
 		(stroke
@@ -7050,6 +7062,16 @@
 			(type default)
 		)
 		(uuid "0fee0b71-e135-4f82-8826-5665e81fce01")
+	)
+	(wire
+		(pts
+			(xy 69.85 101.6) (xy 63.5 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "116e7e98-ccf8-4cc5-a373-8a92eafbe98b")
 	)
 	(wire
 		(pts
@@ -8013,6 +8035,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 91.44) (xy 63.5 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c044e75-4707-4e69-9abf-9ec2ad835ae3")
+	)
+	(wire
+		(pts
 			(xy 80.01 138.43) (xy 91.44 138.43)
 		)
 		(stroke
@@ -8133,6 +8165,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 166.37) (xy 179.07 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d645b9d-95d3-4ec7-abd9-21caed6bc6fa")
+	)
+	(wire
+		(pts
 			(xy 50.8 213.36) (xy 50.8 209.55)
 		)
 		(stroke
@@ -8250,6 +8292,16 @@
 			(type default)
 		)
 		(uuid "9e6ea757-1024-4680-90e7-4a367e4d4568")
+	)
+	(wire
+		(pts
+			(xy 74.93 134.62) (xy 74.93 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0ecad8-895f-48d2-93de-bc109b1ef708")
 	)
 	(wire
 		(pts
@@ -8400,6 +8452,16 @@
 			(type default)
 		)
 		(uuid "a9dc31d3-794b-4a01-a025-e1c7f245ffb8")
+	)
+	(wire
+		(pts
+			(xy 26.67 144.78) (xy 26.67 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac9e65ce-9281-4d47-a8f7-a026326e31b4")
 	)
 	(wire
 		(pts
@@ -8813,6 +8875,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 80.01) (xy 66.04 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc8d645-7652-4a6a-a136-662262fdffdf")
+	)
+	(wire
+		(pts
 			(xy 48.26 219.71) (xy 48.26 220.98)
 		)
 		(stroke
@@ -8820,6 +8892,16 @@
 			(type default)
 		)
 		(uuid "cc52e744-53b5-45bf-98ab-1027d23fbdee")
+	)
+	(wire
+		(pts
+			(xy 80.01 91.44) (xy 74.93 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc6cd49c-05d1-4603-8958-b80a4780f25c")
 	)
 	(wire
 		(pts
@@ -9203,6 +9285,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 80.01) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0567261-06e1-4c16-a7cb-562a49fb3243")
+	)
+	(wire
+		(pts
 			(xy 281.94 95.25) (xy 281.94 88.9)
 		)
 		(stroke
@@ -9310,6 +9402,16 @@
 			(type default)
 		)
 		(uuid "f94a23cd-5888-411c-b459-144a3cb6ec2a")
+	)
+	(wire
+		(pts
+			(xy 69.85 100.33) (xy 69.85 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9dafd83-84f5-4f1d-997b-9d9506943b7f")
 	)
 	(wire
 		(pts
@@ -9471,6 +9573,16 @@
 		)
 		(uuid "7052ce56-f33f-413e-832f-3f3906e7f333")
 	)
+	(label "rotary-encoder-output"
+		(at 80.01 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82b59ab9-91fc-4c40-aef7-4905d4ee4585")
+	)
 	(label "Bit4"
 		(at 106.68 161.29 180)
 		(effects
@@ -9500,6 +9612,16 @@
 			(justify left bottom)
 		)
 		(uuid "87a82c78-7de9-4c2d-84d8-d94fa75f2071")
+	)
+	(label "rotary-encoder-output"
+		(at 191.77 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d477e4b-f3c7-410e-819c-9a1ca85b8746")
 	)
 	(label "Bit3"
 		(at 222.25 161.29 0)
@@ -10699,10 +10821,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f2")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8e")
 		)
 		(instances
 			(project ""
@@ -11595,6 +11717,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 58.42 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26e705fd-2b52-4658-9fc9-5dbdfe9842ff")
+		(property "Reference" "J10"
+			(at 59.055 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 59.055 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm_Relief2x"
+			(at 58.42 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 58.42 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b7193b58-b5f5-4cfc-acef-31111201a5bc")
+		)
+		(instances
+			(project "regulator-PCB"
+				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:2N3904")
 		(at 240.03 267.97 0)
 		(unit 1)
@@ -11902,10 +12089,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f3")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8f")
 		)
 		(instances
 			(project ""
@@ -13135,15 +13322,80 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f4")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f90")
 		)
 		(instances
 			(project ""
 				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 58.42 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49b3d861-1459-4f9e-9598-3b73f994d45d")
+		(property "Reference" "J8"
+			(at 59.055 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 59.055 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm_Relief2x"
+			(at 58.42 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 58.42 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53eda137-47d0-4d2d-84ed-1d92313bd51c")
+		)
+		(instances
+			(project "regulator-PCB"
+				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -13446,10 +13698,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f5")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f91")
 		)
 		(instances
 			(project ""
@@ -13532,10 +13784,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f6")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f92")
 		)
 		(instances
 			(project ""
@@ -13618,10 +13870,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f7")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f93")
 		)
 		(instances
 			(project ""
@@ -13857,10 +14109,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f8")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f94")
 		)
 		(instances
 			(project ""
@@ -15290,10 +15542,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f9")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f95")
 		)
 		(instances
 			(project ""
@@ -15452,6 +15704,71 @@
 			(project "regulator-PCB"
 				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 58.42 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c6e9a43-1d6a-4f0a-be83-4b3be145dd6f")
+		(property "Reference" "J9"
+			(at 59.055 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x01_Pin"
+			(at 59.055 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.3mm_Relief2x"
+			(at 58.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 58.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc115af8-0404-4d50-963c-1c405fce92dd")
+		)
+		(instances
+			(project "regulator-PCB"
+				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -15652,10 +15969,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7fa")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f96")
 		)
 		(instances
 			(project ""
@@ -16242,6 +16559,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 69.85 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99aa96b5-edf3-4a0e-ad4e-828dee09fd56")
+		(property "Reference" "#PWR048"
+			(at 69.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 69.85 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 69.85 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "825db975-fd42-426e-af1e-5a35f0d19504")
+		)
+		(instances
+			(project "regulator-PCB"
+				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "regulator-PCB:R680")
 		(at 241.3 146.05 90)
 		(unit 1)
@@ -16772,10 +17155,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7fb")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f97")
 		)
 		(instances
 			(project ""
@@ -18194,10 +18577,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7fc")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f98")
 		)
 		(instances
 			(project ""
@@ -19204,10 +19587,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7fd")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f99")
 		)
 		(instances
 			(project ""
@@ -19378,10 +19761,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7fe")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f9a")
 		)
 		(instances
 			(project ""
@@ -19552,10 +19935,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7f1")
+			(uuid "7de1220f-c7aa-4477-be78-2fab3d72b7ff")
 		)
 		(pin "2"
-			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f8d")
+			(uuid "5fb16eb8-a536-4b6e-8fb5-a75a7a617f9b")
 		)
 		(instances
 			(project ""
@@ -20073,6 +20456,72 @@
 			(project "regulator-PCB"
 				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9863f36-7d5a-477f-943c-3caa83637ece")
+		(property "Reference" "#PWR047"
+			(at 66.04 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8d884f2-4c78-4b79-b470-2f2fe69491e6")
+		)
+		(instances
+			(project "regulator-PCB"
+				(path "/893b0420-d399-4ce1-b227-7f791d40804b"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)

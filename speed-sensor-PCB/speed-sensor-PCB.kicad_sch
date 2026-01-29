@@ -5,7 +5,7 @@
 	(uuid "794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Pin"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -14,15 +14,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x01_Pin"
-				(at 0 -2.54 0)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -82,7 +82,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x01_Pin_1_1"
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(rectangle
 					(start 0.8636 0.127)
 					(end 0 -0.127)
@@ -92,6 +103,29 @@
 					)
 					(fill
 						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(polyline
@@ -106,8 +140,20 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at 5.08 2.54 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -117,6 +163,42 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1119,16 +1201,22 @@
 		(uuid "04768532-e1ae-478f-bc3f-a47c0994ab39")
 	)
 	(junction
-		(at 35.56 41.91)
+		(at 76.2 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "29892284-c5ff-4261-9a2a-24b37ea66790")
+		(uuid "5848b014-c17a-4415-a30c-45965fe355db")
 	)
 	(junction
 		(at 53.34 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95527b6b-b15c-4e35-ab11-c81654c3ca16")
+	)
+	(junction
+		(at 76.2 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d2bd264-9d43-4be9-a710-96c075c712df")
 	)
 	(junction
 		(at 35.56 77.47)
@@ -1141,12 +1229,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec79bffb-9049-4e17-9c8f-f68ad6320d63")
-	)
-	(junction
-		(at 35.56 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa7eaa5c-94e2-4cea-af4c-7aec0555b8d1")
 	)
 	(no_connect
 		(at 90.17 59.69)
@@ -1168,7 +1250,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 62.23) (xy 57.15 62.23)
+			(xy 57.15 62.23) (xy 59.69 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1198,6 +1280,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 83.82) (xy 76.2 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42beae1e-ace2-44d9-b214-4b8efd72d16d")
+	)
+	(wire
+		(pts
 			(xy 87.63 45.72) (xy 87.63 46.99)
 		)
 		(stroke
@@ -1208,7 +1300,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 57.15) (xy 35.56 41.91)
+			(xy 35.56 54.61) (xy 35.56 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1268,16 +1360,6 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 41.91) (xy 35.56 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1298444-a88f-4d52-889f-885e0dc16f8d")
-	)
-	(wire
-		(pts
 			(xy 59.69 59.69) (xy 53.34 59.69)
 		)
 		(stroke
@@ -1288,7 +1370,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 62.23) (xy 57.15 77.47)
+			(xy 57.15 62.23) (xy 57.15 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1308,13 +1390,13 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 86.36) (xy 35.56 83.82)
+			(xy 76.2 91.44) (xy 76.2 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d60d50b4-c6e6-451b-9c53-e374647aebd7")
+		(uuid "d68e8360-a6fe-478b-b9d3-8bde2967aa6e")
 	)
 	(wire
 		(pts
@@ -1338,7 +1420,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 77.47) (xy 35.56 83.82)
+			(xy 35.56 77.47) (xy 35.56 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1368,77 +1450,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 77.47) (xy 59.69 77.47)
+			(xy 57.15 88.9) (xy 76.2 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f79610f6-f76d-446f-b9bf-01b115421e2e")
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 68.58 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00130e7e-e0b7-48d5-a402-df1e0edb2f8c")
-		(property "Reference" "H2"
-			(at 71.12 29.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 71.12 31.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_ISO14580"
-			(at 68.58 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 68.58 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "speed-sensor-PCB"
-				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1507,32 +1525,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 40.64 83.82 180)
+		(lib_id "Mechanical:MountingHole")
+		(at 107.95 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "23264465-947c-4c8d-a00a-abd8b538771c")
-		(property "Reference" "J5"
-			(at 50.8 81.28 0)
+		(fields_autoplaced yes)
+		(uuid "0cc5f733-4e1b-4894-89e8-ff76a1777e17")
+		(property "Reference" "H2"
+			(at 110.49 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 50.8 83.82 0)
+		(property "Value" "MountingHole"
+			(at 110.49 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm_Relief"
-			(at 40.64 83.82 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
+			(at 107.95 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1541,7 +1562,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 83.82 0)
+			(at 107.95 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1549,54 +1570,54 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 40.64 83.82 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 107.95 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "5e61f7ed-5e1d-4bc4-8e45-25780434d1b0")
 		)
 		(instances
 			(project "speed-sensor-PCB"
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
-					(reference "J5")
+					(reference "H2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 40.64 41.91 180)
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 81.28 88.9 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "26488799-2823-44d9-9d1b-cf9e7032ebf0")
+		(fields_autoplaced yes)
+		(uuid "2bbd1bef-43ad-4b73-85c0-c85849c78d29")
 		(property "Reference" "J1"
-			(at 50.8 39.37 0)
+			(at 82.55 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 50.8 41.91 0)
+		(property "Value" "Conn_01x03_Pin"
+			(at 82.55 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm_Relief"
-			(at 40.64 41.91 0)
+		(property "Footprint" "Connector_JST:JST_VH_B3P-VH-FB-B_1x03_P3.96mm_Vertical"
+			(at 81.28 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1605,7 +1626,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 41.91 0)
+			(at 81.28 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1613,8 +1634,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 40.64 41.91 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 81.28 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1623,7 +1644,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "919ad8c8-6cad-44fb-a8e3-9fde361d320f")
+			(uuid "22944a66-8a6c-4e56-be77-d4b4e3b1541c")
+		)
+		(pin "3"
+			(uuid "0545f4e7-8ac2-4639-b1de-522dc5ce8c76")
+		)
+		(pin "2"
+			(uuid "6a19b0b1-6b8e-41aa-adaf-6e81741153d0")
 		)
 		(instances
 			(project ""
@@ -1635,8 +1662,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 107.95 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "342caa50-0dc1-46be-af13-91cc34f0bfd4")
+		(property "Reference" "H3"
+			(at 110.49 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 110.49 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 107.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "speed-sensor-PCB"
+				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 35.56 86.36 0)
+		(at 35.56 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1645,7 +1736,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d95f20b-c3e4-4db9-bc6f-03aa74c026db")
 		(property "Reference" "#PWR02"
-			(at 35.56 92.71 0)
+			(at 35.56 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1654,7 +1745,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 91.44 0)
+			(at 35.56 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1662,7 +1753,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 86.36 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1671,7 +1762,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 86.36 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1680,7 +1771,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 86.36 0)
+			(at 35.56 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,72 +1792,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 68.58 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4cdeccd2-87d5-4c23-a2e9-5dffc437c41f")
-		(property "Reference" "H1"
-			(at 71.12 34.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 71.12 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_ISO14580"
-			(at 68.58 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 68.58 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 35.56 41.91 90)
+		(at 76.2 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1775,7 +1802,7 @@
 		(fields_autoplaced yes)
 		(uuid "50e8d488-dc25-4e56-876d-16f00f189565")
 		(property "Reference" "#FLG01"
-			(at 33.655 41.91 0)
+			(at 74.295 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1784,7 +1811,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 31.75 41.9099 90)
+			(at 72.39 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1793,7 +1820,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 41.91 0)
+			(at 76.2 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1802,7 +1829,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 41.91 0)
+			(at 76.2 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1811,7 +1838,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 35.56 41.91 0)
+			(at 76.2 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1823,7 +1850,7 @@
 			(uuid "f979a706-7c8f-4ea6-a690-2c0d9cfcc6b1")
 		)
 		(instances
-			(project ""
+			(project "speed-sensor-PCB"
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
 					(reference "#FLG01")
 					(unit 1)
@@ -1832,32 +1859,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 64.77 77.47 180)
+		(lib_id "power:PWR_FLAG")
+		(at 76.2 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6efc5912-7e7a-438c-a7a7-b8156cdf5bf9")
-		(property "Reference" "J4"
-			(at 74.93 74.93 0)
+		(fields_autoplaced yes)
+		(uuid "61f7b5be-eccb-49c8-ac6d-d180012e780a")
+		(property "Reference" "#FLG03"
+			(at 74.295 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 74.93 77.47 0)
+		(property "Value" "PWR_FLAG"
+			(at 72.39 91.4399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm_Relief"
-			(at 64.77 77.47 0)
+		(property "Footprint" ""
+			(at 76.2 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1866,7 +1896,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 64.77 77.47 0)
+			(at 76.2 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1874,8 +1904,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 64.77 77.47 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 76.2 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1884,12 +1914,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "280eb4a9-d1f0-4895-b9ef-50e564b858fd")
+			(uuid "05aa7fa4-756f-487c-a8dd-1a96fe54bf14")
 		)
 		(instances
 			(project "speed-sensor-PCB"
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
-					(reference "J4")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -1956,6 +1986,70 @@
 			(project "speed-sensor-PCB"
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 107.95 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8198c486-ca80-45e6-af0c-5f5839949bcf")
+		(property "Reference" "H4"
+			(at 110.49 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 110.49 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
+			(at 107.95 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 107.95 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "speed-sensor-PCB"
+				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -2050,35 +2144,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 68.58 25.4 0)
+		(lib_id "power:+3.3V")
+		(at 76.2 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a3d10e3b-9462-495c-bc61-9cd99c2bf6bb")
-		(property "Reference" "H3"
-			(at 71.12 24.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 71.12 26.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6_ISO14580"
-			(at 68.58 25.4 0)
+		(uuid "9e609f85-b6a0-4ab1-8782-16039ddfa6c1")
+		(property "Reference" "#PWR06"
+			(at 76.2 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2086,8 +2162,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 68.58 25.4 0)
+		(property "Value" "+3.3V"
+			(at 76.2 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,19 +2179,31 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 68.58 25.4 0)
+		(property "Datasheet" ""
+			(at 76.2 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 76.2 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2cbbbbd-d3e0-4ac4-a87b-5dfe63e7b7f0")
 		)
 		(instances
 			(project "speed-sensor-PCB"
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
-					(reference "H3")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2319,7 +2415,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 35.56 39.37 0)
+		(at 35.56 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2328,7 +2424,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb7eacd3-4cea-4dfe-b2ca-1bd6197dbce2")
 		(property "Reference" "#PWR01"
-			(at 35.56 43.18 0)
+			(at 35.56 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2337,7 +2433,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 35.56 34.29 0)
+			(at 35.56 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2345,7 +2441,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 39.37 0)
+			(at 35.56 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2354,7 +2450,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 39.37 0)
+			(at 35.56 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2363,7 +2459,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 35.56 39.37 0)
+			(at 35.56 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2384,26 +2480,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 35.56 83.82 90)
+		(lib_id "Mechanical:MountingHole")
+		(at 107.95 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d69bccaf-b3fb-4c96-a0cc-c766d67feb18")
-		(property "Reference" "#FLG02"
-			(at 33.655 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 31.75 83.8199 90)
+		(uuid "cfd05fcd-8546-4cba-965e-06478ff0add7")
+		(property "Reference" "H1"
+			(at 110.49 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2411,8 +2498,17 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 35.56 83.82 0)
+		(property "Value" "MountingHole"
+			(at 110.49 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380"
+			(at 107.95 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2421,7 +2517,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 35.56 83.82 0)
+			(at 107.95 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2429,22 +2525,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 35.56 83.82 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 107.95 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "a07b4a8b-1620-4674-a9f7-6dc387d2a145")
 		)
 		(instances
 			(project "speed-sensor-PCB"
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
-					(reference "#FLG02")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -2533,6 +2626,72 @@
 			(project ""
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f48d643a-60c6-41a1-a8a6-8f96873722b9")
+		(property "Reference" "#PWR07"
+			(at 76.2 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94ae6ff4-4e84-47a8-a3dd-f3ad7eefe104")
+		)
+		(instances
+			(project "speed-sensor-PCB"
+				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
