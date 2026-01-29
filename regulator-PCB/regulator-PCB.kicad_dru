@@ -1,0 +1,5 @@
+(version 1)
+(rule "Mains to LV clearance"
+  (condition "A.NetClass == 'mains' && B.NetClass != 'mains'")
+  (constraint clearance (min 3.2mm))
+)
