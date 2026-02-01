@@ -1,0 +1,12 @@
+Reference,Qty,OrderQnty,Value,MFG,Mouser #,Description
+"C1,C2,C3",3,10,0.1uF,Vishay,594-222233627104,Safety Capacitors .1uF 10% 275volts
+D1,1,2,DB3,,511-DB3,"32V 2A Bidirectional trigger diode, DO-35"
+"J1,J2",2,10,1-726388-2,TE Connectivity,571-1-726388-2,"Tab terminal,PCB, FASTON 187, straight TE Connectivity FASTON .187 Series , Straight Mount Angle PCB Tab Terminal, 4.75 x 0.81mm Tin Plated"
+Q1,1,2,BT137-600E,,771-BT137-600E ,Triacs RAIL TRIAC
+R1,1,2,1k,Vishay,71-CPF31K0000FKE14,Metal Film Resistors - Through Hole 3watts 1Kohms 1% 100ppm
+R2,1,2,22k,Vishay,594-SFR25H0002202FA5 ,Metal Film Resistors - Through Hole SFR25H 1% A5 22K
+R3,1,2,1k,,594-SFR25H0001001FA5,Metal Film Resistors SFR25H 1% A5 1K0
+R4,1,2,100,Vishay,71-CPF3100R00FKE14 ,Metal Film Resistors 3watts 100ohms 1% 100ppm
+R5,1,2,200k,Vishay,594-PR01000102003FA5 ,Metal Film Resistors PR01 1% A5 200K
+RV1,1,2,100k,Alpha (Taiwan),312-219BF-100K,Trimmer Resistors - Through Hole T7 YA 100K 20% BO e2
+RV2,1,2,20k,Bourns,652-3329H-1-203LF,"Trimmer Resistors - Through Hole 1/4""RND 20KOHMS 10% 0.5WATTS"
