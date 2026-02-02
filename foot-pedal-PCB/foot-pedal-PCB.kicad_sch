@@ -127,6 +127,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -1036,7 +1119,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(property "Footprint" "project:BT137-600E"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -1404,6 +1487,152 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project:Fuse Holder"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Value" "Fuse"
+				(at -5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "project:696108003002"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse Block 20 A 250V 1 Circuit Cartridge Through Hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG #" "696108003002"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG" "Würth Elektronik"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse Holder_0_0"
+				(rectangle
+					(start -5.08 -1.27)
+					(end 5.08 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 1.27) (xy -3.81 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 3.81 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -2539,21 +2768,224 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "project:Varistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Varistor"
+				(at -3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "project:VAR_B72214P2301K101"
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "470 V 6 kA Varistor 1 Circuit Through Hole Disc 14mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_varistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=A 2=B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "threshold=1k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG" "EPCOS - TDK Electronics"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MFG #" "B72214P2301K101"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "VDR resistance"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "RV_* Varistor*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Varistor_0_0"
+				(text "U"
+					(at -1.778 -2.032 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "Varistor_0_1"
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Varistor_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
-		(at 176.53 151.13)
+		(at 193.04 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0dfd40cb-ef35-437b-8ae3-29b1fe03236d")
 	)
 	(junction
-		(at 172.72 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1fa8aa4e-908b-47a5-a444-2601cbb6fd79")
-	)
-	(junction
-		(at 176.53 153.67)
+		(at 193.04 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27c765a5-24ba-4614-88d3-4dd0b106deac")
@@ -2577,19 +3009,13 @@
 		(uuid "3993e295-d153-4371-9fb9-a853be6b7fe7")
 	)
 	(junction
-		(at 162.56 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c5e7ca4-947d-4270-a355-547ea0efd272")
-	)
-	(junction
-		(at 172.72 137.16)
+		(at 189.23 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c3bddc9-8b97-4316-a400-1687de002c42")
 	)
 	(junction
-		(at 176.53 137.16)
+		(at 193.04 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "827e7869-de7d-4690-98da-8e05e5eab5bd")
@@ -2601,10 +3027,28 @@
 		(uuid "999605fb-6fbd-41a6-83f1-f0079605cbc5")
 	)
 	(junction
+		(at 158.75 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc996010-b390-4a7e-84fc-d9642239d486")
+	)
+	(junction
+		(at 158.75 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c22d9431-651a-4f33-8440-1e835edf612d")
+	)
+	(junction
 		(at 226.06 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d32ba837-533b-479f-b419-963907d3d3c2")
+	)
+	(junction
+		(at 154.94 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d64a4b76-1e2f-4305-94a7-918369d06741")
 	)
 	(junction
 		(at 158.75 113.03)
@@ -2617,12 +3061,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e981d68d-1c72-42b9-9163-ab7ae3785e5d")
-	)
-	(junction
-		(at 162.56 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed004bfe-b2bf-4ff1-864e-e2120d221663")
 	)
 	(junction
 		(at 148.59 137.16)
@@ -2639,6 +3077,16 @@
 			(type default)
 		)
 		(uuid "0e844883-4d47-459d-9ea6-1931cf9bc121")
+	)
+	(wire
+		(pts
+			(xy 161.29 137.16) (xy 158.75 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e4a1d8b-c127-46d5-9484-0c817be3202c")
 	)
 	(wire
 		(pts
@@ -2672,7 +3120,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 135.89) (xy 172.72 137.16)
+			(xy 189.23 135.89) (xy 189.23 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2692,7 +3140,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 137.16) (xy 176.53 139.7)
+			(xy 193.04 137.16) (xy 193.04 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2772,16 +3220,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 137.16) (xy 162.56 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "748dbc70-3ce4-47d7-abc7-97c1a79767fb")
-	)
-	(wire
-		(pts
 			(xy 198.12 88.9) (xy 227.33 88.9)
 		)
 		(stroke
@@ -2789,26 +3227,6 @@
 			(type default)
 		)
 		(uuid "7d2d57cf-7f00-4dce-90f1-323cc16e6dec")
-	)
-	(wire
-		(pts
-			(xy 162.56 125.73) (xy 214.63 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d466de4-e6f7-4fcb-a6aa-6b3fea643665")
-	)
-	(wire
-		(pts
-			(xy 158.75 125.73) (xy 162.56 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c1f903a-d5cb-4471-b56c-c6367bcfb6a6")
 	)
 	(wire
 		(pts
@@ -2822,7 +3240,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 151.13) (xy 176.53 153.67)
+			(xy 193.04 151.13) (xy 193.04 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2852,7 +3270,17 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 148.59) (xy 176.53 151.13)
+			(xy 158.75 137.16) (xy 158.75 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3b17b94-2a35-4ec0-887d-5f93f9b98e1d")
+	)
+	(wire
+		(pts
+			(xy 193.04 148.59) (xy 193.04 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2952,7 +3380,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 137.16) (xy 162.56 137.16)
+			(xy 148.59 137.16) (xy 154.94 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2962,7 +3390,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 125.73) (xy 162.56 137.16)
+			(xy 158.75 125.73) (xy 158.75 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3012,6 +3440,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 137.16) (xy 158.75 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0105016-5fd5-4672-a86f-a0aa3b2c91ff")
+	)
+	(wire
+		(pts
 			(xy 135.89 158.75) (xy 135.89 160.02)
 		)
 		(stroke
@@ -3022,7 +3460,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 153.67) (xy 176.53 154.94)
+			(xy 193.04 153.67) (xy 193.04 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3039,6 +3477,16 @@
 			(type default)
 		)
 		(uuid "e8645c4f-82cc-491a-a949-2f0f524e4f9e")
+	)
+	(wire
+		(pts
+			(xy 176.53 137.16) (xy 189.23 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed68c46b-438f-4c53-85b1-5a1068448a8a")
 	)
 	(wire
 		(pts
@@ -3062,13 +3510,23 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 137.16) (xy 176.53 137.16)
+			(xy 189.23 137.16) (xy 193.04 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f86b654c-3525-46f1-b54a-4af553417ba9")
+	)
+	(wire
+		(pts
+			(xy 158.75 125.73) (xy 214.63 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9e56340-30ab-4fbd-a70d-8dc841af66ce")
 	)
 	(wire
 		(pts
@@ -3241,6 +3699,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 104.14 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "204b14ea-d384-4f64-919e-1d3c33afeda4")
+		(property "Reference" "H1"
+			(at 106.68 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 106.68 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_5.5mm"
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/8b65a45a-9b73-4c2f-a345-ca9dcd12b5f2"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 232.41 88.9 180)
 		(unit 1)
@@ -3306,7 +3828,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 176.53 154.94 0)
+		(at 193.04 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3315,7 +3837,7 @@
 		(fields_autoplaced yes)
 		(uuid "29df95c4-765f-4787-bcb5-92e6d1673d33")
 		(property "Reference" "#PWR02"
-			(at 176.53 161.29 0)
+			(at 193.04 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,7 +3846,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 176.53 160.02 0)
+			(at 193.04 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3854,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 154.94 0)
+			(at 193.04 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3341,7 +3863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 154.94 0)
+			(at 193.04 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,7 +3872,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 154.94 0)
+			(at 193.04 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3372,7 +3894,7 @@
 	)
 	(symbol
 		(lib_id "project:1-726388-2")
-		(at 176.53 148.59 0)
+		(at 193.04 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3381,7 +3903,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c77d14a-439f-410b-aab3-148d1a82be3e")
 		(property "Reference" "J2"
-			(at 193.04 148.5899 0)
+			(at 209.55 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3390,7 +3912,7 @@
 			)
 		)
 		(property "Value" "1-726388-2"
-			(at 193.04 151.1299 0)
+			(at 209.55 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3399,7 +3921,7 @@
 			)
 		)
 		(property "Footprint" "project:17263882"
-			(at 193.04 243.51 0)
+			(at 209.55 243.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,7 +3931,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/055e60f42819069191c4e7cf8bb8e9d2.pdf"
-			(at 193.04 343.51 0)
+			(at 209.55 343.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,7 +3941,7 @@
 			)
 		)
 		(property "Description" "Tab terminal,PCB, FASTON 187, straight TE Connectivity FASTON .187 Series , Straight Mount Angle PCB Tab Terminal, 4.75 x 0.81mm Tin Plated"
-			(at 176.53 148.59 0)
+			(at 193.04 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +3950,7 @@
 			)
 		)
 		(property "Height" "8"
-			(at 193.04 543.51 0)
+			(at 209.55 543.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3438,7 +3960,7 @@
 			)
 		)
 		(property "Mouser #" "571-1-726388-2"
-			(at 193.04 643.51 0)
+			(at 209.55 643.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3448,7 +3970,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/1-726388-2?qs=sd1rtLGwt45Lz6YyJvcJPw%3D%3D"
-			(at 193.04 743.51 0)
+			(at 209.55 743.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3458,7 +3980,7 @@
 			)
 		)
 		(property "MFG" "TE Connectivity"
-			(at 193.04 843.51 0)
+			(at 209.55 843.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3468,7 +3990,7 @@
 			)
 		)
 		(property "MFG #" "1-726388-2"
-			(at 193.04 943.51 0)
+			(at 209.55 943.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3494,7 +4016,7 @@
 	)
 	(symbol
 		(lib_id "project:1-726388-2")
-		(at 176.53 137.16 0)
+		(at 193.04 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3503,7 +4025,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f768af2-c9a0-4488-b518-a57d1f5cfc0c")
 		(property "Reference" "J1"
-			(at 193.04 137.1599 0)
+			(at 209.55 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3512,7 +4034,7 @@
 			)
 		)
 		(property "Value" "1-726388-2"
-			(at 193.04 139.6999 0)
+			(at 209.55 139.6999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3521,7 +4043,7 @@
 			)
 		)
 		(property "Footprint" "project:17263882"
-			(at 193.04 232.08 0)
+			(at 209.55 232.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3531,7 +4053,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/055e60f42819069191c4e7cf8bb8e9d2.pdf"
-			(at 193.04 332.08 0)
+			(at 209.55 332.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3541,7 +4063,7 @@
 			)
 		)
 		(property "Description" "Tab terminal,PCB, FASTON 187, straight TE Connectivity FASTON .187 Series , Straight Mount Angle PCB Tab Terminal, 4.75 x 0.81mm Tin Plated"
-			(at 176.53 137.16 0)
+			(at 193.04 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3550,7 +4072,7 @@
 			)
 		)
 		(property "Height" "8"
-			(at 193.04 532.08 0)
+			(at 209.55 532.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3560,7 +4082,7 @@
 			)
 		)
 		(property "Mouser #" "571-1-726388-2"
-			(at 193.04 632.08 0)
+			(at 209.55 632.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3570,7 +4092,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/1-726388-2?qs=sd1rtLGwt45Lz6YyJvcJPw%3D%3D"
-			(at 193.04 732.08 0)
+			(at 209.55 732.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3580,7 +4102,7 @@
 			)
 		)
 		(property "MFG" "TE Connectivity"
-			(at 193.04 832.08 0)
+			(at 209.55 832.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3590,7 +4112,7 @@
 			)
 		)
 		(property "MFG #" "1-726388-2"
-			(at 193.04 932.08 0)
+			(at 209.55 932.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4063,8 +4585,228 @@
 		)
 	)
 	(symbol
+		(lib_id "project:Fuse Holder")
+		(at 168.91 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53e1af29-256d-401a-ad62-8c9919e159a2")
+		(property "Reference" "J8"
+			(at 168.91 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Fuse"
+			(at 168.91 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project:696108003002"
+			(at 168.91 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fuse Block 20 A 250V 1 Circuit Cartridge Through Hole"
+			(at 168.91 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG #" "696108003002"
+			(at 168.91 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Würth Elektronik"
+			(at 168.91 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06f11c7a-0525-4967-929b-cdc978e4b814")
+		)
+		(pin "2"
+			(uuid "e5d82a88-eddc-4b99-a69b-8b4a60fae67c")
+		)
+		(instances
+			(project ""
+				(path "/8b65a45a-9b73-4c2f-a345-ca9dcd12b5f2"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "project:Varistor")
+		(at 158.75 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "543f70a5-0b23-437f-b6a6-908c7b11600f")
+		(property "Reference" "RV3"
+			(at 161.29 142.4332 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Varistor"
+			(at 161.29 144.9732 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:VAR_B72214P2301K101"
+			(at 156.972 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "470 V 6 kA Varistor 1 Circuit Through Hole Disc 14mm"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "kicad_builtin_varistor"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=A 2=B"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "threshold=1k"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "EPCOS - TDK Electronics"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG #" "B72214P2301K101"
+			(at 158.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1dc8033b-4f2e-40ab-9db1-6f8a93d92012")
+		)
+		(pin "1"
+			(uuid "e6177007-d3c6-4366-a721-fa1bba30f3e0")
+		)
+		(instances
+			(project ""
+				(path "/8b65a45a-9b73-4c2f-a345-ca9dcd12b5f2"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:AC")
-		(at 172.72 135.89 0)
+		(at 154.94 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4073,7 +4815,7 @@
 		(fields_autoplaced yes)
 		(uuid "60aa6db5-a79c-4b57-a236-ad3b6ee465de")
 		(property "Reference" "#PWR01"
-			(at 172.72 138.43 0)
+			(at 154.94 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4082,7 +4824,7 @@
 			)
 		)
 		(property "Value" "AC"
-			(at 172.72 128.27 0)
+			(at 154.94 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4090,7 +4832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 135.89 0)
+			(at 154.94 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4099,7 +4841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 135.89 0)
+			(at 154.94 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4108,7 +4850,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"AC\""
-			(at 172.72 135.89 0)
+			(at 154.94 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4120,7 +4862,7 @@
 			(uuid "75cc7761-1eae-44aa-8e72-92a74434fc55")
 		)
 		(instances
-			(project ""
+			(project "foot-pedal-PCB"
 				(path "/8b65a45a-9b73-4c2f-a345-ca9dcd12b5f2"
 					(reference "#PWR01")
 					(unit 1)
@@ -4227,16 +4969,15 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 172.72 135.89 90)
+		(at 189.23 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6dae5d61-60a6-42b4-a069-ce8a58c07c90")
 		(property "Reference" "#FLG02"
-			(at 170.815 135.89 0)
+			(at 189.23 133.985 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4245,7 +4986,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 168.91 135.8901 90)
+			(at 184.404 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4254,7 +4995,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 135.89 0)
+			(at 189.23 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4263,7 +5004,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 172.72 135.89 0)
+			(at 189.23 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4272,7 +5013,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 172.72 135.89 0)
+			(at 189.23 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4550,6 +5291,72 @@
 			(project "foot-pedal-PCB"
 				(path "/8b65a45a-9b73-4c2f-a345-ca9dcd12b5f2"
 					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8be7ce90-4ef6-430a-a02d-1145fd780ecd")
+		(property "Reference" "#PWR08"
+			(at 158.75 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "910d3480-be84-49dd-a5dc-aa9576167dd9")
+		)
+		(instances
+			(project "foot-pedal-PCB"
+				(path "/8b65a45a-9b73-4c2f-a345-ca9dcd12b5f2"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4835,7 +5642,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+		(property "Footprint" "project:BT137-600E"
 			(at 126.365 80.01 0)
 			(effects
 				(font
@@ -5593,7 +6400,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 176.53 153.67 90)
+		(at 193.04 153.67 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5602,7 +6409,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee4cc687-025c-4b58-ab02-7dcb0ad216c8")
 		(property "Reference" "#FLG01"
-			(at 174.625 153.67 0)
+			(at 191.135 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5611,7 +6418,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 172.72 153.6701 90)
+			(at 189.23 153.6701 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5620,7 +6427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 176.53 153.67 0)
+			(at 193.04 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5629,7 +6436,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 153.67 0)
+			(at 193.04 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5638,7 +6445,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 176.53 153.67 0)
+			(at 193.04 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
