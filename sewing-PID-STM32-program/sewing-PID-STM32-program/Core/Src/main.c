@@ -27,12 +27,29 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
+typedef struct {
+    // Controller Gains
+    double Kp;
+    double Ki;
+    double Kd;
+
+    // State variables
+    double setpoint;
+    double integral;
+    double prev_error;
+
+    // Limits (to prevent Integral Windup)
+    double out_min;
+    double out_max;
+} PID_Controller;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define NUM_PINS 15
 #define NUM_BITS 13
+#define MAX_SPEED 10 // rev/s
 
 /* USER CODE END PD */
 
@@ -85,7 +102,7 @@ uint16_t minResPin = GPIO_PIN_10;
 GPIO_TypeDef* maxResPort = GPIOA;
 uint16_t maxResPin = GPIO_PIN_11;
 
-double epsilon = 0.001f; // this is the threshold for ON/OFF, given ADC error
+double epsilon = 0.01f; // this is the threshold for ON/OFF, given ADC error
 double throttle = 0; // current motor throttle
 
 // store input voltages
@@ -93,6 +110,11 @@ uint32_t adc_val1 = 0;
 uint32_t adc_val2 = 0;
 double pot_input = 0;
 double rotary_encoder_input = 0;
+double dt = 0.005;
+
+double prev_encoder_val = 0;
+double current_speed = 0;
+
 
 /* USER CODE END PV */
 
@@ -106,6 +128,8 @@ static void MX_ADC1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+
 
 
 void set_throttle(float throttle)
@@ -144,8 +168,45 @@ void set_throttle(float throttle)
 		        HAL_GPIO_WritePin(GPIO_Ports[i], GPIO_Pins[i], GPIO_PIN_SET);
 		    }
 		}
-
 	}
+}
+
+double PID_Compute(PID_Controller *pid, double measurement, double dt) {
+    // 1. Calculate Error
+    double error = pid->setpoint - measurement;
+
+    // Proportional term
+    if (pid->setpoint < 1.0)
+    {
+        pid->Kp = 10.0;
+    }
+    else
+    {
+    	pid->Kp = 1.0;
+    }
+    double P = pid->Kp * error;
+
+    // 3. Integral term (with basic anti-windup clamping)
+    pid->integral += error * dt;
+
+    // TIGHT CLAMP: Don't let the "I" term be more than, say, 20% of total throttle
+    double max_i = 0.5;
+    if (pid->integral * pid->Ki > max_i) pid->integral = max_i / pid->Ki;
+    if (pid->integral * pid->Ki < -max_i) pid->integral = -max_i / pid->Ki;
+    double I = pid->Ki * pid->integral;
+
+    // Derivative term
+    double D = pid->Kd * (error - pid->prev_error) / dt;
+
+    // Total Output
+    double output = P + I + D;
+
+    // Clamp output to throttle range [0, 1]
+    if (output > pid->out_max) output = pid->out_max;
+    else if (output < pid->out_min) output = pid->out_min;
+
+    pid->prev_error = error;
+    return output;
 }
 
 /* USER CODE END 0 */
@@ -182,6 +243,16 @@ int main(void)
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
+  PID_Controller motor_pid = {
+      .Kp = 10.0,
+      .Ki = 1.0,
+      .Kd = 0.0,
+      .out_min = 0.0,
+      .out_max = 1.0,
+      .integral = 0,
+      .prev_error = 0
+  };
+
   // calibrate ADC
   HAL_ADCEx_Calibration_Start(&hadc1);
 
@@ -216,10 +287,37 @@ int main(void)
 
 
 
-	// throttle test
-	set_throttle(rotary_encoder_input);
-	HAL_Delay(10);
+	// update setpoint speed on PID object
+	motor_pid.setpoint = pot_input * MAX_SPEED; // in rev/s
 
+	// Calculate the raw change in position
+	double delta_pos = rotary_encoder_input - prev_encoder_val;
+
+	// 2. Handle the 0 <-> 1 Wrap-around (The "Shortest Path" logic)
+	if (delta_pos > 0.5)  delta_pos -= 1.0;
+	if (delta_pos < -0.5) delta_pos += 1.0;
+
+	current_speed = -1.0 * (delta_pos / dt);
+
+
+	// Update for next loop
+	prev_encoder_val = rotary_encoder_input;
+
+
+	if (pot_input < epsilon)
+	{
+		set_throttle(0.0);
+		motor_pid.integral = 0;
+		motor_pid.prev_error = 0;
+	}
+	else
+	{
+		// compute throttle according to PID
+		throttle = PID_Compute(&motor_pid, current_speed, dt);
+
+		set_throttle(throttle);
+	}
+	HAL_Delay((uint16_t)(dt * 1000));
 
 
   }

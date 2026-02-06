@@ -1,10 +1,10 @@
-17:18:04 **** Incremental Build of configuration Debug for project sewing-PID-STM32-program ****
+22:53:28 **** Incremental Build of configuration Debug for project sewing-PID-STM32-program ****
 make -j9 all 
 arm-none-eabi-size  sewing-PID-STM32-program.elf 
    text	   data	    bss	    dec	    hex	filename
-  17868	    132	   1696	  19696	   4cf0	sewing-PID-STM32-program.elf
+  22332	    140	   1720	  24192	   5e80	sewing-PID-STM32-program.elf
 Finished building: default.size.stdout
  
 
-17:18:05 Build Finished. 0 errors, 0 warnings. (took 324ms)
+22:53:29 Build Finished. 0 errors, 0 warnings. (took 260ms)
 
