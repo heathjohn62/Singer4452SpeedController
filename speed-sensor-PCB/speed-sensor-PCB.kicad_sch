@@ -1231,6 +1231,10 @@
 		(uuid "ec79bffb-9049-4e17-9c8f-f68ad6320d63")
 	)
 	(no_connect
+		(at 90.17 64.77)
+		(uuid "21f9daaa-1ff7-42f6-bb16-f9a1c302503e")
+	)
+	(no_connect
 		(at 90.17 59.69)
 		(uuid "d0e5e006-7d53-4605-814b-3bb3f3aa6b55")
 	)
@@ -1347,16 +1351,6 @@
 			(type default)
 		)
 		(uuid "97c72671-1f74-4af0-bc04-1cba6e3c9dc4")
-	)
-	(wire
-		(pts
-			(xy 90.17 66.04) (xy 90.17 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0f7a226-d270-4199-969b-a92feb224d15")
 	)
 	(wire
 		(pts
@@ -1920,72 +1914,6 @@
 			(project "speed-sensor-PCB"
 				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
 					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 90.17 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8013d906-5204-40e0-92c8-4b7254443c25")
-		(property "Reference" "#PWR05"
-			(at 90.17 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 90.17 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0db21cea-855c-4d65-87eb-65d7bce66ffb")
-		)
-		(instances
-			(project "speed-sensor-PCB"
-				(path "/794d29e3-fe64-4cc2-bad2-bb2c3f72b9a3"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)

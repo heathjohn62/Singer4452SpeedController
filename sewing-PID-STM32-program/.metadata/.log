@@ -1,0 +1,102 @@
+!SESSION 2026-02-05 13:27:48.905 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/john/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/john/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-05 13:29:06.972
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-05 13:29:06.974
+!MESSAGE Log4j2 initialized with config file /Users/john/Library/CloudStorage/OneDrive-Stanford/nonsense/sewing/singer4452-speed-controller/sewing-PID-STM32-program/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-05 13:29:11.574
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-05 13:35:48.967
+!MESSAGE Indexed 'sewing-PID-STM32-program' (18 sources, 82 headers) in 7 sec: 4,078 declarations; 15,479 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.01%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-02-05 13:43:47.403
+!MESSAGE Error in final launch sequence:
+
+Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Operation timed out.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Operation timed out.
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: localhost:61234: Operation timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2026-02-05 13:43:47.406
+!MESSAGE Failed to execute MI command:
+target remote localhost:61234
+
+Error message from debugger back end:
+localhost:61234: Operation timed out.
+!STACK 0
+java.lang.Exception: localhost:61234: Operation timed out.
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.ui 4 0 2026-02-05 15:28:32.109
+!MESSAGE Error in CDT UI during reconcile
+!STACK 1
+C Model Exception: C Model Status [Element main.c does not exist.]
+	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
+	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
+	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
+	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
+	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
+	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
+	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+!SUBENTRY 1 org.eclipse.cdt.core 4 969 2026-02-05 15:28:32.114
+!MESSAGE Element main.c does not exist.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:38:06.627
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 17 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:38:06.630
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:38:06.630
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 17 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:38:06.631
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:58:09.340
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 25 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:58:09.342
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:58:09.344
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 25 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2026-02-05 16:58:09.345
+!MESSAGE Existing sessions are:
