@@ -1,10 +1,17 @@
-22:53:28 **** Incremental Build of configuration Debug for project sewing-PID-STM32-program ****
+20:08:58 **** Incremental Build of configuration Debug for project sewing-PID-STM32-program ****
 make -j9 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32C092xx -c -I../Core/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc -I../Drivers/STM32C0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32C0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "sewing-PID-STM32-program.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/Users/john/Library/CloudStorage/OneDrive-Stanford/nonsense/sewing/singer4452-speed-controller/sewing-PID-STM32-program/sewing-PID-STM32-program/STM32C092KCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sewing-PID-STM32-program.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: sewing-PID-STM32-program.elf
+ 
 arm-none-eabi-size  sewing-PID-STM32-program.elf 
+arm-none-eabi-objdump -h -S sewing-PID-STM32-program.elf  > "sewing-PID-STM32-program.list"
    text	   data	    bss	    dec	    hex	filename
-  22332	    140	   1720	  24192	   5e80	sewing-PID-STM32-program.elf
+  22344	    140	   1720	  24204	   5e8c	sewing-PID-STM32-program.elf
 Finished building: default.size.stdout
  
+Finished building: sewing-PID-STM32-program.list
+ 
 
-22:53:29 Build Finished. 0 errors, 0 warnings. (took 260ms)
+20:09:01 Build Finished. 0 errors, 0 warnings. (took 2s.870ms)
 

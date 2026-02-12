@@ -282,8 +282,7 @@ int main(void)
 	  HAL_ADC_Stop(&hadc1);
 
 	// Convert the raw 12-bit value (0-4095) to a 0-1 normalized double
-	// A high voltage reads as a low speed for our pot, so we invert it.
-	pot_input = 1.0 - (adc_val1 * 1.0) / 4095.0;
+	pot_input = (adc_val1 * 1.0) / 4095.0;
 	rotary_encoder_input = (adc_val2 * 1.0) / 4095.0;
 
 
