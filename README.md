@@ -2,7 +2,17 @@
 
 This project implements PID feedback to improve control over the Singer 4452 sewing machine. The modifications are non-destructive to the sewing machine. 
 
+Implement this at your own risk. I do not have an electrical engineering degree nor am I a certified electrician. 120V AC flows through the sewing machine pedal and the PID regulator board, which can electrocute you, start fires, and break things. Don't perform work on circuits that are plugged into the wall. 
+
 As an outline:
-1. A rotary encoder tracks the position of the sewing needle by mounting externally to the knob on the side of the machine. 
-2. A network of optoisolated resistors emulate the potentiometer in the existing pedal. Resistance is programmed by a MCU. 
-3. Motor velocity is regulated by a new pedal, connected to a potentiometer. 
+1. A rotary encoder tracks the position of the sewing needle by mounting externally to the knob on the side of the machine. The FreeCAD design for the rotary encoder is contained in "rotary-encoder-CAD". Some hardware, a magnet, rubber tape, duct tape, and a ball bearing are also required to assemble this. The PCB for the rotary encoder IC in contained in "speed-sensor-PCB."
+2. A network of optoisolated resistors emulate the potentiometer in the existing pedal. Resistance is programmed by a MCU. The MCU and resistor network are enclosed in a chasis, and the design for the PCB is in the folder "Regulator-PCB." The STM32 was programmed in the STM32CubeIDE using the files in the folder "sewing-PID-STM32-program".
+3. The circuit board in the original pedal is redesigned. The slide potentiometer provides input to the MCU instead of providing the timing to an RC oscillator as in the original pedal. The RC osillator is timed by the variable resistor network in the regulator PCB. The BT136-600E triac is exchanged for a higher current BT137-600E, and an additional 100 ohm and 0.1uF snubber is added to mitigate stress on the motor and triac. A fuse and varistor are added as short circuit and overvoltage protection. 
+
+Errors and other notes:
+- In my original rotary encoder design, pin 5 on the AS5600-ASOT was grounded. This was a mistake, and the pin should be left open. This is now fixed in KiCAD, but for my own sewing machine I just pried the IC pin off of the PCB. 
+- The 5V barrel jack runs directly into the enclosure when positioned as it currently is on the PCB. I cut the barrel off and soldered the wires directly to the PCB. This is not currently fixed in the KiCAD design. 
+- The AC mains connect to the foot pedal using 0.110" quick-connect tabs. I designed the board for two-prong 0.187" tabs (TE 1-726388-2), which don't fit the mains cables. I didn't want to pay for shipping again, so I bent one of the two prongs on the tabs so that one could be soldered into the PCB and the other into the mains cable. This is fine, but the better part to use would be something like TE 62395-1. 
+- "foot-pedal-PCB" contains a folder "spice" with a (very approximate) simulation of the triac trigger circuit in the foot pedal. I used this to better understand the circuit in the original pedal and improve the design. In my hands, the triac model used by the simulation refuses to latch on PC, but works great on mac. 
+- **This is likely not the best solution to this problem**. Using an optoisolated resistor network to adjust an RC timer takes up a ton of space and parts, and could be replaced by a circuit that exactly controls the phase angle modulation using only few optoisolators. I did not know I would be redesigning the foot pedal PCB after designing the regulator PCB. I'm now satisfied with the handling of my Singer 4452, so I have no plans to engineer this further. 
+- Materials I ordered for this project can be found in the "orders" folder. Other things you would need include a soldering iron, hot air rework station or reflow oven, a drill, wire crimpers, STLink/V2 debugger and TAG-connect adapter, some metric machine screws and standoffs. I recommend anti-static precautions when working with STM32s. 
