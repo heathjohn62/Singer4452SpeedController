@@ -102,7 +102,7 @@ uint16_t minResPin = GPIO_PIN_10;
 GPIO_TypeDef* maxResPort = GPIOA;
 uint16_t maxResPin = GPIO_PIN_11;
 
-double epsilon = 0.03f; // this is the threshold for ON/OFF, given ADC error
+double epsilon = 0.01f; // this is the threshold for ON/OFF, given ADC error
 double throttle = 0; // current motor throttle
 
 // store input voltages
