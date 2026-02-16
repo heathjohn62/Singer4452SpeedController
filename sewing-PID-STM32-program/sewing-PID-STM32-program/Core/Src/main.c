@@ -49,7 +49,7 @@ typedef struct {
 /* USER CODE BEGIN PD */
 #define NUM_PINS 15
 #define NUM_BITS 13
-#define MAX_SPEED 10 // rev/s
+#define MAX_SPEED 20 // rev/s
 
 /* USER CODE END PD */
 
@@ -289,7 +289,8 @@ int main(void)
 
 
 	// update setpoint speed on PID object
-	motor_pid.setpoint = pot_input * MAX_SPEED; // in rev/s
+	// qualitative control curve is 16x^3 + 4x
+	motor_pid.setpoint = pot_input * pot_input * pot_input * (MAX_SPEED - 4) + pot_input * 4;
 
 	// Calculate the raw change in position
 	double delta_pos = rotary_encoder_input - prev_encoder_val;

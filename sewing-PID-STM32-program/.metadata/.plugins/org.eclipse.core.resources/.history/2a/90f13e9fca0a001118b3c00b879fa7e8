@@ -49,7 +49,7 @@ typedef struct {
 /* USER CODE BEGIN PD */
 #define NUM_PINS 15
 #define NUM_BITS 13
-#define MAX_SPEED 3 // rev/s
+#define MAX_SPEED 10 // rev/s
 
 /* USER CODE END PD */
 
@@ -110,10 +110,11 @@ uint32_t adc_val1 = 0;
 uint32_t adc_val2 = 0;
 double pot_input = 0;
 double rotary_encoder_input = 0;
-
+double dt = 0.005;
 
 double prev_encoder_val = 0;
 double current_speed = 0;
+
 
 /* USER CODE END PV */
 
@@ -175,7 +176,7 @@ double PID_Compute(PID_Controller *pid, double measurement, double dt) {
     double error = pid->setpoint - measurement;
 
     // Proportional term
-    if (pid->setpoint < 0.5)
+    if (pid->setpoint < 1.0)
     {
         pid->Kp = 10.0;
     }
@@ -189,7 +190,7 @@ double PID_Compute(PID_Controller *pid, double measurement, double dt) {
     pid->integral += error * dt;
 
     // TIGHT CLAMP: Don't let the "I" term be more than, say, 20% of total throttle
-    double max_i = 0.2;
+    double max_i = 0.5;
     if (pid->integral * pid->Ki > max_i) pid->integral = max_i / pid->Ki;
     if (pid->integral * pid->Ki < -max_i) pid->integral = -max_i / pid->Ki;
     double I = pid->Ki * pid->integral;
@@ -243,9 +244,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   PID_Controller motor_pid = {
-      .Kp = 10.0,   // Start small!
-      .Ki = 0.1,
-      .Kd = 0.01,
+      .Kp = 10.0,
+      .Ki = 1.0,
+      .Kd = 0.0,
       .out_min = 0.0,
       .out_max = 1.0,
       .integral = 0,
@@ -281,7 +282,8 @@ int main(void)
 	  HAL_ADC_Stop(&hadc1);
 
 	// Convert the raw 12-bit value (0-4095) to a 0-1 normalized double
-	pot_input = (adc_val1 * 1.0) / 4095.0;
+	// A high voltage reads as a low speed for our pot, so we invert it.
+	pot_input = 1.0 - (adc_val1 * 1.0) / 4095.0;
 	rotary_encoder_input = (adc_val2 * 1.0) / 4095.0;
 
 
@@ -296,8 +298,8 @@ int main(void)
 	if (delta_pos > 0.5)  delta_pos -= 1.0;
 	if (delta_pos < -0.5) delta_pos += 1.0;
 
-	// Assumes a 20ms (0.02s) loop
-	current_speed = -1.0 * (delta_pos / 0.02);
+	current_speed = -1.0 * (delta_pos / dt);
+
 
 	// Update for next loop
 	prev_encoder_val = rotary_encoder_input;
@@ -311,10 +313,12 @@ int main(void)
 	}
 	else
 	{
-		throttle = PID_Compute(&motor_pid, current_speed, 0.02);
+		// compute throttle according to PID
+		throttle = PID_Compute(&motor_pid, current_speed, dt);
+
 		set_throttle(throttle);
 	}
-	HAL_Delay(10);
+	HAL_Delay((uint16_t)(dt * 1000));
 
 
   }
